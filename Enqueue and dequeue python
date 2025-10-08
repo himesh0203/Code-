@@ -1,0 +1,20 @@
+from collections import deque
+
+# Create a queue
+my_queue = deque()
+
+# Enqueue operations
+my_queue.append('A')
+my_queue.append('B')
+my_queue.append('C')
+
+print("Queue after enqueue operations:", my_queue)
+
+# Dequeue operations
+first_element = my_queue.popleft()
+print("Dequeued element:", first_element)
+print("Queue after first dequeue:", my_queue)
+
+second_element = my_queue.popleft()
+print("Dequeued element:", second_element)
+print("Queue after second dequeue:", my_queue)
